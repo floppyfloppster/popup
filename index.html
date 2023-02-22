@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratis smulan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+.popup {
+    position: absolute;
+    left: 4vw;
+    bottom: 0vh;
+    border: 3px solid;
+    padding: 1rem;
+    min-width: 90%;
+}
+.hidden {
+display: none;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="popup">
+<body style="text-align:center">
+
+<h2>Smulan helt gratis!</h2>
+<p>vill du ha smulan gratis?</p>
+<p> det innebär bara att vi tar all din information och du ger oss tillgång till ditt familjeträd också</p>
+    <button id="accept">Ja</button>
+<button>Nej</button>
+
+<script>
+    const div = document.querySelector(".popup")
+    const accept = document.querySelector("#accept");
+    accept.addEventListener("click",(event) => {
+        console.log('ja')
+        div.classList.toggle("hidden");
+    })
+
+</script>
+
+    </div>
+
+</head>
+
+</body>
+</html>
